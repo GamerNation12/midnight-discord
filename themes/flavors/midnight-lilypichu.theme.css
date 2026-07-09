@@ -11,7 +11,7 @@
 */
 
 /* import theme modules */
-@import url('https://raw.githubusercontent.com/GamerNation12/midnight-discord/master/build/midnight.css');
+@import url('https://cdn.jsdelivr.net/gh/GamerNation12/midnight-discord@master/build/midnight.css');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 
 body {
@@ -43,7 +43,7 @@ body {
 
     /* dms button options */
     --custom-dms-icon: hide; /* off: use default discord icon, hide: remove icon entirely, custom: use custom icon */
-    --dms-icon-svg-url: url('https://raw.githubusercontent.com/GamerNation12/midnight-discord/master/assets/Font_Awesome_5_solid_moon.svg'); /* icon svg url. MUST BE A SVG. */
+    --dms-icon-svg-url: url('https://cdn.jsdelivr.net/gh/GamerNation12/midnight-discord@master/assets/Font_Awesome_5_solid_moon.svg'); /* icon svg url. MUST BE A SVG. */
     --dms-icon-svg-size: 90%; /* size of the svg (css mask-size property) */
     --dms-icon-color-before: var(--icon-subtle); /* normal icon color */
     --dms-icon-color-after: var(--white); /* icon color when button is hovered/selected */

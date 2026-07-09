@@ -20,7 +20,7 @@ a dark, customizable discord theme.
 
 ### install through link
 
-add `https://raw.githubusercontent.com/GamerNation12/midnight-discord/master/build/midnight.css` to your theme import links. you will need to copy the theme variables to your quickcss in order to customize the theme.
+add `https://cdn.jsdelivr.net/gh/GamerNation12/midnight-discord@master/build/midnight.css` to your theme import links. you will need to copy the theme variables to your quickcss in order to customize the theme.
 
 ## flavors
 

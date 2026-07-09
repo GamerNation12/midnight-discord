@@ -11,7 +11,7 @@
 */
 
 /* import theme modules */
-@import url('https://raw.githubusercontent.com/GamerNation12/midnight-discord/master/build/midnight.css');
+@import url('https://cdn.jsdelivr.net/gh/GamerNation12/midnight-discord@master/build/midnight.css');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 body {
