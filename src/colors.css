@@ -82,8 +82,7 @@
 
 @container root style(--colors: on) {
     body,
-    .theme-dark:not(.custom-user-profile-theme),
-    .theme-light:not(.custom-user-profile-theme) {
+    :is(html, :root, body, #app-mount, .layerContainer__59d0d):is(.theme-dark, .theme-light):not(.custom-user-profile-theme) {
         --app-frame-background: var(--bg-3);
         --app-frame-border: var(--border);
         --app-message-embed-secondary-text: var(--text-2);
