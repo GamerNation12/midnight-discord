@@ -5,7 +5,7 @@
     container-name: root;
 
     --custom-guild-list-padding: 12px;
-    --panel-backdrop-filter: none;
+
 }
 
 body {
@@ -65,12 +65,15 @@ body {
     background-color: var(--background-base-lower);
     border-radius: var(--radius-lg);
     border: var(--border-thickness) solid var(--border-subtle);
-    backdrop-filter: var(--panel-backdrop-filter);
     box-sizing: border-box;
     transition: border-color var(--border-hover-transition);
 
     &:hover {
         border-color: var(--border-hover);
+    }
+
+    @container body style(--panel-blur: on) {
+        backdrop-filter: blur(var(--blur-amount));
     }
 }
 
@@ -340,7 +343,9 @@ body {
     background: none;
 }
 .standardSidebarView__23e6b {
-    backdrop-filter: var(--panel-backdrop-filter);
+    @container body style(--panel-blur: on) {
+        backdrop-filter: blur(var(--blur-amount));
+    }
 }
 
 /* remove excess backgrounds */
@@ -568,16 +573,15 @@ body {
         .container__91a9d /* members */,
         .channel__972a0 /* dms */,
         .side_aa8da2 .item_aa8da2 /* settings */ {
-        transition: margin-left var(--list-item-transition);
-
+        transition: transform var(--list-item-transition);
     }
     .wrapper__2ea32:hover .link__2ea32,
     .side_aa8da2 .item_aa8da2:hover {
-        margin-left: 10px;
+        transform: translateX(10px);
     }
     .container__91a9d:hover,
     .channel__972a0:hover {
-        margin-left: 18px;
+        transform: translateX(18px);
     }
     /* list hover channel dot */
     .unread__2ea32 {
@@ -585,17 +589,16 @@ body {
         width: 8px;
         height: 8px;
         margin-left: -4px;
-        transition: var(--list-item-transition);
-
+        transition: transform var(--list-item-transition);
     }
     .wrapper__2ea32:hover .unread__2ea32 {
-        margin-left: 4px;
+        transform: translateX(8px);
     }
     .typeThread__2ea32 .unread__2ea32 {
         margin-left: -8px;
     }
     .wrapper__2ea32.typeThread__2ea32:hover .unread__2ea32 {
-        margin-left: 0px;
+        transform: translateX(8px);
     }
 }
 
@@ -658,12 +661,15 @@ body {
         background-color: var(--background-base-lower);
         border-radius: var(--radius-lg);
         border: var(--border-thickness) solid var(--border-subtle);
-        backdrop-filter: var(--panel-backdrop-filter);
         transition: border-color var(--border-hover-transition);
         overflow: hidden;
 
         &:hover {
             border-color: var(--border-hover);
+        }
+
+        @container body style(--panel-blur: on) {
+            backdrop-filter: blur(var(--blur-amount));
         }
     }
     .scrollerSpacer__36d07 {
@@ -707,11 +713,14 @@ body {
         background-color: var(--background-base-lower);
         border-radius: var(--radius-lg);
         border: var(--border-thickness) solid var(--border-subtle);
-        backdrop-filter: var(--panel-backdrop-filter);
         transition: border-color var(--border-hover-transition);
 
         &:hover {
             border-color: var(--border-hover);
+        }
+
+        @container body style(--panel-blur: on) {
+            backdrop-filter: blur(var(--blur-amount));
         }
     }
     .stackedBars__74017 {
@@ -724,11 +733,14 @@ body {
         border-radius: var(--radius-lg);
         border: var(--border-thickness) solid var(--border-subtle);
         background-color: var(--bg-4);
-        backdrop-filter: var(--panel-backdrop-filter);
         transition: border-color var(--border-hover-transition);
 
         &:hover {
             border-color: var(--border-hover);
+        }
+
+        @container body style(--panel-blur: on) {
+            backdrop-filter: blur(var(--blur-amount));
         }
     }
     /* "This channel is not in your channel list" header */
@@ -2223,9 +2235,6 @@ body {
 }
 
 @container body style(--panel-blur: on) {
-    #app-mount {
-        --panel-backdrop-filter: blur(var(--blur-amount));
-    }
 
     .popoverReactionHoverBar_f84418 /* message hover quick action bar */,
         .tooltip_c36707 /* tooltips */ {
@@ -2246,7 +2255,7 @@ body {
     .menu_c1e9c4::before {
         content: '';
         position: absolute;
-        backdrop-filter: var(--panel-backdrop-filter);
+        backdrop-filter: blur(var(--blur-amount));
         border-radius: 8px;
         background: transparent;
         width: 100%;

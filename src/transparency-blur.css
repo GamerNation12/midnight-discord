@@ -5,9 +5,6 @@
 }
 
 @container body style(--panel-blur: on) {
-    #app-mount {
-        --panel-backdrop-filter: blur(var(--blur-amount));
-    }
 
     .popoverReactionHoverBar_f84418 /* message hover quick action bar */,
         .tooltip_c36707 /* tooltips */ {
@@ -28,7 +25,7 @@
     .menu_c1e9c4::before {
         content: '';
         position: absolute;
-        backdrop-filter: var(--panel-backdrop-filter);
+        backdrop-filter: blur(var(--blur-amount));
         border-radius: 8px;
         background: transparent;
         width: 100%;
