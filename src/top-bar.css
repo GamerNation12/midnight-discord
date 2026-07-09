@@ -265,7 +265,7 @@ body {
     }
 
     /* Hide trailing in VC wrapper */
-    .base__5e434,
+    /* .base__5e434,
     .popout__0bd4a {
         &:has(:is(& > .content__5e434 > .page__5e434 .chat_f75fb0, & > .content__0bd4a .root) > .video_cb9592:not(.sidebarOpen_cb9592) .callContainer_cb9592 > .root_bfe55a.idle_bfe55a)
             .trailing_c38106 {
@@ -277,7 +277,7 @@ body {
                 opacity: 1;
             }
         }
-    }
+    } */
 }
 
 @property --top-bar-title-position {

@@ -16,7 +16,7 @@ body {
         .channel__972a0 /* dms */,
         .side_aa8da2 .item_aa8da2 /* settings */ {
         transition: margin-left var(--list-item-transition);
-        will-change: margin-left;
+
     }
     .wrapper__2ea32:hover .link__2ea32,
     .side_aa8da2 .item_aa8da2:hover {
@@ -33,7 +33,7 @@ body {
         height: 8px;
         margin-left: -4px;
         transition: var(--list-item-transition);
-        will-change: margin-left;
+
     }
     .wrapper__2ea32:hover .unread__2ea32 {
         margin-left: 4px;
